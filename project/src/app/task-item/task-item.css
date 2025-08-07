@@ -1,0 +1,73 @@
+div{
+
+    margin-top: 80px;
+}
+
+h6 {
+  position: relative; /* still in flow */
+  z-index: 10;        /* above article */
+  background-color: #d82570;
+  padding: 5px 10px;
+  margin: 0 0 -208px 0; /* pull upwards to overlap article */
+  rotate: -45deg;
+  transform-origin: left top;
+  width: max-content;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  box-shadow: 0 0 5px #333;
+  font-size: 1.3rem;
+  border: 1px dashed #333;
+
+}
+
+article {
+  position: relative; /* keep normal flow */
+  background-color: rgb(252, 162, 229);
+  width: fit-content;
+  padding: 70px;
+  border-radius: 12px;
+  /* box-shadow: 0 0 16px #e70000; */
+  z-index: 1;  /* below h6 */
+  text-align: center;
+  margin-top: 80px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+article:hover {
+    filter:drop-shadow(10px 10px 10px  #ff0000);
+    .delete, a{
+        display: block;
+        padding: 12px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #ff0095;
+        border: none;
+        margin: auto;
+        transition: all 0.3s ease-in-out;
+    }
+
+     .delete:hover, a:hover{
+         background-color: #ac0365;
+
+     }
+
+  
+}
+
+h2{
+    font-size: 3rem;
+    margin-top: auto;
+}
+h4{
+    font-size: 1.5rem;
+}
+.delete, a{
+    display: none;
+}
+.column{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

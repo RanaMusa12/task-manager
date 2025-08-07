@@ -1,0 +1,99 @@
+form{
+
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width:max-content; 
+    box-shadow: 0 0px 10px rgb(120, 138, 241);
+    padding: 12px;
+    align-items: center;
+    text-align: center;
+    margin: auto ; 
+    background: linear-gradient(to bottom, #9bb6ce, #b4c6d6);
+    z-index: 999;
+}   
+
+input, textarea{
+
+    margin: 12px;
+    padding: 10px;
+    font-size: 1.1rem;
+    background-color: #edf0f3;
+    border: none;
+    border-radius: 4px;
+    resize: none;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+input, textarea:focus{
+    border: 1px solid #898ac9;
+}
+textarea{
+
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+label{
+
+    font-size: 1.3rem;
+    color: #1b2125;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  
+}
+button{
+
+    padding: 12px;
+    font-size: 1.5rem;
+    background-color: #edf0f3;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0px 5px #a7afb6;
+    color: rgb(63, 63, 63);
+    transition: all 0.3s ease-in;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:#dde7f1;
+}
+.button-row{
+
+    margin-left: 35px;
+}
+.hidden{
+
+    display: none;
+
+}
+.visible{
+    display: block;
+}
+.message{
+    margin-top: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 0 12px #fffb00;
+    font-size: 1.1rem;
+}
+
+[formgroupname].ng-invalid.ng-touched.ng-dirty label,
+.control:has(.ng-invalid.ng-touched.ng-dirty) label {
+  color: #f98b75;
+}
+
+[formgroupname].ng-invalid.ng-touched.ng-dirty input,
+input.ng-invalid.ng-touched.ng-dirty {
+  background-color: #fbdcd6;
+  border-color: #f84e2c;
+}

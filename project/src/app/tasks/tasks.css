@@ -1,0 +1,24 @@
+div {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  /* height: 100vh;           
+  width: 100%;              */
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 60px;
+    padding: 0;
+    justify-items: center;
+    margin-top: 60px;  
+    
+}
+li{
+  transition: all 0.3s ease-in-out;
+}
+li:hover{
+  transform: scale(1.01);
+}

@@ -1,0 +1,13 @@
+<div>
+    <h6>{{task().date | date:'mediumDate'}}</h6>
+    <article>
+        
+        <h2>{{task().title}}</h2>
+        <p>{{task().description}}</p>
+        <div class="column">
+             <button class="delete" type="button" (click)="onDelete(task().id)">Delete</button>
+             <a class="edit"(click)="onEdit(task().id)">Edit</a>
+        </div>
+        
+    </article>
+</div>
